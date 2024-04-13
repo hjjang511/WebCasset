@@ -1,0 +1,72 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Đồ thị
+graph = {
+    'A': {'B': 1, 'C': 4},
+    'B': {'A': 1, 'C': 2, 'D': 5},
+    'C': {'A': 4, 'B': 2, 'D': 1},
+    'D': {'B': 5, 'C': 1}
+}
+
+# Tìm kiếm đường đi với giá cực tiểu sử dụng mảng
+def dijkstra(graph, start):
+    # Khởi tạo mảng lưu trữ đường đi và khoảng cách
+    distances = {vertex: float('inf') for vertex in graph}
+    distances[start] = 0
+    previous_vertices = {vertex: None for vertex in graph}
+    vertices = list(graph.keys())
+    
+    while vertices:
+        current_vertex = min(vertices, key=lambda vertex: distances[vertex])
+        vertices.remove(current_vertex)
+        if distances[current_vertex] == float('inf'):
+            break
+        for neighbor, weight in graph[current_vertex].items():
+            alternative_route = distances[current_vertex] + weight
+            if alternative_route < distances[neighbor]:
+                distances[neighbor] = alternative_route
+                previous_vertices[neighbor] = current_vertex
+    
+    return previous_vertices
+
+# Vẽ lại đường đi bằng biểu đồ
+def plot_path(graph, start, end, path):
+    G = nx.Graph()
+    for vertex, edges in graph.items():
+        for edge, weight in edges.items():
+            G.add_edge(vertex, edge, weight=weight)
+    
+    pos = nx.spring_layout(G)
+    nx.draw(G, pos, with_labels=True, node_size=700, node_color="lightblue", font_size=12, font_weight="bold")
+    edge_labels = nx.get_edge_attributes(G, 'weight')
+    nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels)
+    
+    current = end
+    path_edges = []
+    while current != start:
+        previous = path[current]
+        path_edges.append((previous, current))
+        current = previous
+    path_edges.reverse()
+    nx.draw_networkx_edges(G, pos, edgelist=path_edges, edge_color='red', width=2)
+    
+    plt.title("Path Visualization")
+    plt.show()
+
+# Đỉnh xuất phát và đích đến
+start_vertex = 'A'
+end_vertex = 'D'
+
+# Tìm kiếm đường đi với giá cực tiểu
+previous_vertices = dijkstra(graph, start_vertex)
+
+# Tạo đường đi từ đỉnh xuất phát đến đỉnh đích
+path = {}
+current = end_vertex
+while current is not None:
+    path[current] = previous_vertices[current]
+    current = previous_vertices[current]
+
+# Vẽ lại đường đi bằng biểu đồ
+plot_path(graph, start_vertex, end_vertex, path)
