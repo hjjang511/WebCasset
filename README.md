@@ -23,5 +23,6 @@ b. Nhu cầu quản lí
 ·         Báo cáo thống kê    
 
 c. Đối tượng
+
 ·         Admin: Quản lí băng đĩa, quản lí đơn đặt hàng, Báo cáo thống kê
 ·         Khách hàng: Đăng kí, đăng nhập, Tạo mixtape (ngoại hình, âm thanh), Thanh toán, Giỏ hàng
