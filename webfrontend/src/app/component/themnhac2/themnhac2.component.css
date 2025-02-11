@@ -1,0 +1,379 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+  }
+  
+  .main-container {
+    overflow: hidden;
+  }
+  
+  .main-container,
+  .main-container * {
+    box-sizing: border-box;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    outline: 0;
+  }
+  
+  .main-container {
+    position: relative;
+    width: 1728px;
+    height: 872px;
+    margin: 0 auto;
+  }
+  .rectangle {
+    position: absolute;
+    width: 1728px;
+    height: 872px;
+    top: 0;
+    left: 0;
+    background: #f4f2ec;
+  }
+  .frame-1 {
+    position: absolute;
+    width: 417.33px;
+    height: 50px;
+    top: 17px;
+    left: 446px;
+    font-size: 0px;
+    z-index: 1;
+    border: none;
+  }
+  .label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 409px;
+    height: 40px;
+    margin: 0 0 0 8px;
+    color: #000000;
+    font-family: Open Sans, var(--default-font-family);
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    z-index: 3;
+  }
+  .segmented-bg {
+    position: relative;
+    width: 417.33px;
+    height: 5px;
+    margin: 5px 0 0 0;
+    background: #000000;
+    z-index: 2;
+  }
+  .frame-2 {
+    position: absolute;
+    width: 401px;
+    height: 43px;
+    top: 24px;
+    left: 863.5px;
+    font-size: 0px;
+    z-index: 4;
+    border: none;
+  }
+  .download-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 395px;
+    height: 18px;
+    margin: 0 0 0 3.17px;
+    color: #000000;
+    font-family: Open Sans, var(--default-font-family);
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 6;
+  }
+  .segmented-bg-3 {
+    position: relative;
+    width: 401px;
+    height: 5px;
+    margin: 20px 0 0 0;
+    background: #000000;
+    z-index: 5;
+  }
+  .line {
+    position: absolute;
+    width: 3px;
+    height: 607.003px;
+    top: 125.998px;
+    left: 832.5px;
+    background: url(../../component/img/line2.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 7;
+  }
+  .audio-tape {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    width: 693px;
+    height: 310px;
+    top: 126px;
+    left: 100px;
+    color: #000000;
+    font-family: Open Sans, var(--default-font-family);
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    z-index: 8;
+  }
+  .text-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 8px;
+    position: absolute;
+    width: 754px;
+    height: 277px;
+    top: 126px;
+    left: 874px;
+    z-index: 14;
+  }
+  .side-a {
+    align-self: stretch;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    min-width: 0;
+    height: 20px;
+    color: #151522;
+    font-family: Open Sans, var(--default-font-family);
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 15;
+  }
+  .frame-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    gap: 10px;
+    position: relative;
+    min-width: 0;
+    min-height: 0;
+    padding: 16px 16px 16px 16px;
+    background: #ffffff;
+    border: 1px solid #000000;
+    z-index: 16;
+    border-radius: 5px;
+  }
+  .frame-5 {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 8px;
+    position: relative;
+    z-index: 17;
+  }
+  .label-6 {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 18px;
+    color: #151522;
+    font-family: Open Sans, var(--default-font-family);
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 18px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 18;
+  }
+  .text-inputs-7 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 8px;
+    position: absolute;
+    width: 754px;
+    height: 277px;
+    top: 463px;
+    left: 874px;
+    z-index: 9;
+  }
+  .label-8 {
+    align-self: stretch;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    min-width: 0;
+    height: 20px;
+    color: #151522;
+    font-family: Open Sans, var(--default-font-family);
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 10;
+  }
+  .frame-9 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    gap: 10px;
+    position: relative;
+    min-width: 0;
+    min-height: 0;
+    padding: 16px 16px 16px 16px;
+    background: #ffffff;
+    border: 1px solid #000000;
+    z-index: 11;
+    border-radius: 5px;
+  }
+  .frame-a {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 8px;
+    position: relative;
+    z-index: 12;
+  }
+  .label-b {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+    width: 661px;
+    height: 60px;
+    color: #151522;
+    font-family: Open Sans, var(--default-font-family);
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: left;
+    text-overflow: initial;
+    z-index: 13;
+    overflow: hidden;
+  }
+  .button-newest {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 8px;
+    position: absolute;
+    width: 380px;
+    height: 52px;
+    top: 780px;
+    left: 50%;
+    padding: 0 16px 0 16px;
+    cursor: pointer;
+    background: #be2623;
+    border: none;
+    transform: translate(-58.16%, 0);
+    z-index: 19;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 6px 6px 4px 0 #000000;
+  }
+  .add-to-cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 161px;
+    height: 22px;
+    color: #ffffff;
+    font-family: Open Sans, var(--default-font-family);
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 20;
+  }
+  .chevron-right {
+    flex-shrink: 0;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    z-index: 21;
+  }
+  .chevron-right-c {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 22;
+    overflow: hidden;
+  }
+  .vector {
+    position: relative;
+    width: 5.195px;
+    height: 9.333px;
+    margin: 3.333px 0 0 5.333px;
+    background: url(../../component/img/chevron-right.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 23;
+  }
+  .selected-music {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 396px;
+    height: 22px;
+    top: 795px;
+    left: 65px;
+    color: #000000;
+    font-family: Open Sans, var(--default-font-family);
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 24;
+  }
+
+    .main {
+    position: relative;
+    width: 1728px;
+    height: 953px;
+  }
+  .themnhac2-main{
+        position: relative;
+        width: 1728px;
+        height: 1321px;
+        background: #ffffff;
+        overflow: hidden;
+        position: relative;
+  }

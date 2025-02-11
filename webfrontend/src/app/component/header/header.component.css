@@ -1,0 +1,127 @@
+.header,
+.header * {
+  box-sizing: border-box;
+}
+.header {
+  height: 225px;
+  position: relative;
+}
+.frame-9949 {
+  width: 1728px;
+  height: 51px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.rectangle-1 {
+  background: #000000;
+  width: 1728px;
+  height: 51px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.spring-2024-collection {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  left: 799px;
+  top: 18px;
+}
+.frame-9950 {
+  width: 1728px;
+  height: 174px;
+  position: absolute;
+  left: 0px;
+  top: 51px;
+}
+.rectangle-2 {
+  background: #f4f2ec;
+  width: 1728px;
+  height: 174px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.rectangle-5 {
+  background: #0f3746;
+  width: 408px;
+  height: 71px;
+  position: absolute;
+  left: calc(50% - 204px);
+  top: calc(50% - 36px);
+  border: none;
+}
+.menu {
+  width: 2.78%;
+  height: 27.59%;
+  position: absolute;
+  right: 93.17%;
+  left: 4.05%;
+  bottom: 37.36%;
+  top: 35.06%;
+  overflow: visible;
+  background-image: url(../img/Menu.png);
+  background-size: 100% 100%;
+}
+.shopping-cart {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 1400px;
+  top: 64px;
+  overflow: visible;
+  background-image: url(../img/ShoppingCart.png);
+  background-size: 100% 100%;
+  border: none;
+}
+.account-circle {
+  width: 2.6%;
+  height: 25.86%;
+  position: absolute;
+  right: 13%;
+  bottom: 37.36%;
+  top: 36.78%;
+  overflow: visible;
+  background-image: url(../img/AccountCircle.png);
+  background-size: 100% 100%;
+  border: none;
+}
+.dang-xuat {
+  width: 2.6%;
+  height: 25.86%;
+  position: absolute;
+  right: 6.19%;
+  bottom: 37.36%;
+  top: 36.78%;
+  overflow: visible;
+  background-image: url(../img/chevron-right.png);
+  background-size: 100% 100%;
+  border: none;
+}
+.popover-list {
+  padding: 10px;
+}
+
+.popover-body {
+  padding: 0px;
+}
+
+.popover-item {
+  display: block;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: #333;
+}
+
+.popover-item:hover {
+  background-color: #f0f0f0;
+  color: rgb(127, 68, 255); /* Giả sử $shopapp-color có giá trị rgb(127, 68, 255) */
+}
+.nav-item.active {
+  background-color: rgb(127, 68, 255) !important; /* Thay thế bằng màu cụ thể tương ứng */
+  color: white !important;
+}

@@ -1,0 +1,29 @@
+<div class="themvaogio-main">
+<app-header></app-header>
+<div class="main">
+<app-header-mixtape></app-header-mixtape>
+    <div class="main-container">
+      <button class="mixtape-button">MIXTAPE ĐÃ HOÀN THÀNH</button>
+      <img [src]="bia" class="rectangle">
+      <span class="selected-music">Nhạc bạn đã chọn: Nhac cua ban</span>
+      <div class="component">
+        <button class="group-button">
+          <span class="span-1">
+          <input type="text" style="width: 130px;"  [(ngModel)]="quantity"></span>
+          <div class="rectangle-div"></div></button><span class="choose-quantity-span">Chọn số lượng mixtape bạn muốn phát hành:</span>
+      </div>
+      <button class="newest-button" (click)="buyNow()">
+        <span class="buy-now">MUA NGAY</span>
+        <div class="chevron-right">
+          <div class="chevron-right-1"><div class="vector"></div></div>
+        </div></button>
+      <button class="newest-button-2" (click)="addToCart()" >
+        <span class="add-to-cart">THÊM VÀO GIỎ VÀ TIẾP TỤC MUA HÀNG</span>
+        <div class="chevron-right-3">
+          <div class="chevron-right-4"><div class="vector-5"></div></div>
+        </div>
+      </button>
+      <div class="rectangle-6"></div>
+    </div>
+</div>
+</div>

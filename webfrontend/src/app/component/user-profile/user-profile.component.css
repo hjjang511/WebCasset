@@ -1,0 +1,45 @@
+.main {
+    position: relative;
+    width: 1728px;
+    height: 953px;
+  }
+  .hoadon-main{
+        position: relative;
+        width: 1728px;
+        height: 1321px;
+        background: #ffffff;
+        overflow: hidden;
+        position: relative;
+  }
+  .container {
+    color: white;
+}
+
+.intro-section {
+    color: #0F3746;
+    padding: 20px;
+    text-align: center;
+}
+
+.product-header {
+    color: #0F3746; /* Giả sử $shopapp-tint-color có giá trị rgb(233, 66, 178) */
+}
+
+.form-control {
+    background-color: #ffffff; /* Giả sử $shopapp-background-color có giá trị rgb(19, 23, 42) */
+    border: 1px solid rgb(29, 33, 54);
+    color: black;
+}
+
+.form-control:focus {
+    border-color: white;
+    background-color:#f4f2ec ; /* Giả sử $shopapp-background-color có giá trị rgb(19, 23, 42) */
+}
+
+.form-label {
+    color: #0F3746;
+}
+
+.product-order {
+    color: rgb(105, 244, 181); /* Giả sử $shopapp-title-color có giá trị rgb(105, 244, 181) */
+}

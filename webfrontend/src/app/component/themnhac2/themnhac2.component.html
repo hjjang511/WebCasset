@@ -1,0 +1,43 @@
+<div class="themnhac2-main">
+<div class="main">
+<app-header></app-header>
+<app-header-mixtape></app-header-mixtape>
+    <div class="main-container">
+      <div class="rectangle"></div>
+      <button class="frame-1" [routerLink]="['/themnhac1']">
+        <span class="label"> Chọn playlist</span>
+        <div class="segmented-bg"></div>
+      </button>
+      <button class="frame-2" [routerLink]="['/themnhac2']">
+        <span class="download-label">Tải âm thanh của bạn</span>
+        <div class="segmented-bg-3"></div>
+      </button>
+      <div class="line"></div>
+      <span class="audio-tape"
+        >Băng có 2 mặt A và B, mỗi mặt lưu được tối đa 30 phút. Quá thời lượng
+        âm thanh có thể bị ngắt giữa chừng<br />Điền gì vào ô trống: Hãy tạo
+        playlist trên Spotify, AppleMusic, Youtube,.... Chia làm 2 nửa và dán
+        link vào bên cạnh <br />Riêng file âm thanh riêng, hãy up lên Drive rồi
+        mở link share , hứa chỉ nghe 1 mềnh</span
+      >
+      <div class="text-inputs">
+        <span class="side-a">Mặt A</span>
+        <div class="input-group input-group-lg">
+          <input type="text" [(ngModel)]="matA" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" style="height: 250px; ">
+        </div>
+      </div>
+      <div class="text-inputs-7">
+        <span class="label-8">Mặt B</span>
+        <div class="input-group input-group-lg">
+          <input type="text" [(ngModel)]="matB" class="form-control" placeholder="Nếu cần lồng ghép file ghi âm cùng với nhạc sẵn trên mang thi miêu tả kĩ hơn" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" style="height: 250px; ">
+        </div>
+      </div>
+      <button class="button-newest" (click)="insertProduct()">
+        <span class="add-to-cart">Thêm vào giỏ</span>
+        <div class="chevron-right">
+          <div class="chevron-right-c"><div class="vector"></div></div>
+        </div></button
+      ><span class="selected-music">Nhạc bạn đã chọn: Nhạc của bạn</span>
+    </div>
+</div>
+</div>

@@ -1,0 +1,22 @@
+<div class="header">
+  <div class="frame-9949">
+    <div class="rectangle-1"></div>
+    <div class="spring-2024-collection">Cassette</div>
+  </div>
+  <div class="frame-9950">
+    <div class="rectangle-2"></div>
+    <button class="rectangle-5" title="trangchu" [routerLink]="['/trangchu']"></button>
+    <div class="menu"></div>
+    <button class="shopping-cart" title="giohang" [routerLink]="['/hoadon']"></button>
+    @if(userResponse) {
+      <li>
+      <span><button class="account-circle" [routerLink]="['/user-profile']"></button></span>
+      <span></span><button class="dang-xuat" (click)="dangxuat()" >dangxuat</button>
+    </li>
+    }
+    @else {
+        <button class="account-circle" [routerLink]="['/login']"></button>
+    }                                             
+  </div>
+</div>
+

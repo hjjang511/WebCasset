@@ -1,0 +1,16 @@
+.footer,
+.footer * {
+  box-sizing: border-box;
+}
+.footer {
+  height: 93px;
+  position: relative;
+}
+.rectangle-12 {
+  background: #0b0a0a;
+  width: 1728px;
+  height: 93px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}

@@ -1,0 +1,20 @@
+.main {
+    position: relative;
+    width: 1728px;
+    height: 953px;
+    border:#000000;
+  }
+  .themnhac2-main{
+        position: relative;
+        width: 1728px;
+        height: 1321px;
+        background: #ffffff;
+        overflow: hidden;
+        position: relative;
+  }
+  .container {
+      position: relative;
+      width: 1728px;
+      height: 872px;
+      margin: 0 auto;
+    }
