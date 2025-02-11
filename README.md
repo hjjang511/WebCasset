@@ -9,11 +9,12 @@ o   Khách được chọn ngoại hình của Cassette (Được thêm vào do 
 o   Khách được chọn mixtape thu vào Cassette
 
 §  Mixtape là playlist do nhà sản xuất có sẵn.
+
 §  Mixtape là âm thanh ngoài được thu âm và gửi link cho nhà sản xuất (theo quy định của nhà sản xuất)
 
 ·         Khi khách chọn được sản phầm ưng ý, khách có thể thêm sản phầm vào giỏ hàng
 ·         Khi khách ấn thanh toán, khách cần chuyển khoản toàn bộ số tiền đến 1 stk nhất định, bên admin sẽ check và xác nhận thanh toán, sẽ gửi thông báo về tài khoản người dùng.
-·         Admin khách sạn có tài khoản riêng để quản lí băng đĩa, quản lí đơn đặt hàng, xem báo cáo thống kê
+·         Admin có tài khoản riêng để quản lí băng đĩa, quản lí đơn đặt hàng, xem báo cáo thống kê
 
 b. Nhu cầu quản lí
 
